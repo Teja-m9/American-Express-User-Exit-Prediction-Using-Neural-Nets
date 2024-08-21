@@ -42,6 +42,8 @@ from sklearn.model_selection import train_test_split
 x_train,x_test,y_train,y_test=train_test_split(X,y,test_size=0.20,random_state=0)
 
 #Creating the Naive Bayes Model
+#Why i am using Naive Bayes is it is work well with Natural Language Processing 
+#NLP is a application of Naive Bayes that why it works well with that
 from sklearn.naive_bayes import MultinomialNB
 model=MultinomialNB()
 model.fit(x_train,y_train)
